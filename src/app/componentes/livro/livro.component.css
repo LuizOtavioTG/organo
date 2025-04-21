@@ -43,3 +43,37 @@ section {
     text-align: center;
     color: var(--color-secundaria);
   }
+
+  section .imagem {
+    margin-top: 2rem;
+  }
+  
+  section img {
+    width: 128px;
+    height: 184px;
+    margin-bottom: 1.25rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  .favorito-btn {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 28px;
+    color: #ff5252;
+    padding: 0;
+    outline: none;
+    transition: transform 0.2s ease, opacity 0.2s ease, color 0.2s ease;
+  }
+  
+  .favorito-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.15);
+    color: #ff1744;
+  }
+  
