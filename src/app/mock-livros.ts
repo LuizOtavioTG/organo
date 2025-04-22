@@ -104,8 +104,8 @@ export const livros: Livro[] = [
     titulo: 'Jogos Vorazes',
     autoria: 'Suzanne Collins',
     genero: {
-      id: 'distopia',
-      value: 'Distopia',
+      id: 'ficcao-cientifica',
+      value: 'Ficção Científica',
       livros: []
     },
     favorito: false,
@@ -115,8 +115,8 @@ export const livros: Livro[] = [
     titulo: 'Em Chamas',
     autoria: 'Suzanne Collins',
     genero: {
-      id: 'distopia',
-      value: 'Distopia',
+      id: 'ficcao-cientifica',
+      value: 'Ficção Científica',
       livros: []
     },
     favorito: false,
@@ -126,8 +126,8 @@ export const livros: Livro[] = [
     titulo: 'A Esperança',
     autoria: 'Suzanne Collins',
     genero: {
-      id: 'distopia',
-      value: 'Distopia',
+      id: 'ficcao-cientifica',
+      value: 'Ficção Científica',
       livros: []
     },
     favorito: false,

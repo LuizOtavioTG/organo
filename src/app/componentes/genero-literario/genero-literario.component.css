@@ -1,0 +1,24 @@
+.generos {  
+    display: flex;
+    flex-direction: column;
+    padding: 48px 160px;
+  }
+  
+  .livros-genero {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+  
+  .linha-destaque--pequena {
+    width: 32px;
+  }
+  
+  .texto-h3-prata {
+    font-family: var(--font-prata);
+    font-size: 28px;
+    font-weight: var(--font-weight-normal);
+    line-height: 38px;
+    text-align: center;
+  }
