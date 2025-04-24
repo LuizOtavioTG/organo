@@ -1,8 +1,8 @@
-<section class="generos">
+<section class="generos" [ngClass]="genero().id">
     <h3 class="texto-h3-prata">
         {{genero().value}}
+        <span class="linha-destaque linha-destaque--pequena"[ngClass]="genero().id"></span>
     </h3>
-    <span class="linha-destaque linha-destaque--pequena"></span>
     @if(genero().livros.length === 0){
         <div class="texto-sem-livros">
             <img src="sem-livros.png" alt="Sem livros neste gênero">

@@ -35,3 +35,43 @@
     color: #3b3b3b;
     font-size: 20px;
   }
+
+  .romance {
+    background-color: #E8FFFF;
+  }
+  
+  .generos .romance {
+    border-bottom: 4px solid #82CFFA;
+  }
+  
+  .misterio {
+    background-color: #E9FFE3;
+  }
+  
+  .generos .misterio {
+    border-bottom: 4px solid #A6D157;
+  }
+  
+  .fantasia {
+    background-color: #FFE3E3;
+  }
+  
+  .generos .fantasia {
+    border-bottom: 4px solid #E06B69;
+  }
+  
+  .ficcao-cientifica {
+    background-color: #FFF0FA;
+  }
+  
+  .generos .ficcao-cientifica {
+    border-bottom: 4px solid #DB6EBF;
+  }
+  
+  .tecnicos {
+    background-color: #FFF1E4;
+  }
+  
+  .generos .tecnicos {
+    border-bottom: 4px solid #FF8A29;
+  }

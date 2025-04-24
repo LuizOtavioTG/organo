@@ -1,4 +1,4 @@
-<section>
+<section [ngClass]="livro().genero.id">
     <button class="favorito-btn" (click)="alternarFavorito()">
         <span>{{ livro().favorito ? '\u2764' : '\u2661' }}</span>
 </button>
