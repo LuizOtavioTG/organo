@@ -132,5 +132,71 @@ export const livros: Livro[] = [
     },
     favorito: false,
     imagem: 'https://m.media-amazon.com/images/I/51NWDnRTN6L._AC_UF1000,1000_QL80_.jpg'
+  },
+  {
+    titulo: 'O Iluminado',
+    autoria: 'Stephen King',
+    genero: {
+      id: 'misterio',
+      value: 'Mistério',
+      livros: []
+    },
+    favorito: false,
+    imagem: 'https://m.media-amazon.com/images/I/8147kKLLvOL._AC_UF1000,1000_QL80_.jpg'
+  },
+  {
+    titulo: 'Assassinato no Expresso do Oriente',
+    autoria: 'Agatha Christie',
+    genero: {
+      id: 'misterio',
+      value: 'Mistério',
+      livros: []
+    },
+    favorito: false,
+    imagem: 'https://m.media-amazon.com/images/I/81Zp6MFxIDL.jpg'
+  },
+  {
+    titulo: 'O Nome do Vento',
+    autoria: 'Patrick Rothfuss',
+    genero: {
+      id: 'fantasia',
+      value: 'Fantasia',
+      livros: []
+    },
+    favorito: false,
+    imagem: 'https://m.media-amazon.com/images/I/91bYsX41DVL.jpg'
+  },
+  {
+    titulo: 'O Senhor dos Anéis: A Sociedade do Anel',
+    autoria: 'J.R.R. Tolkien',
+    genero: {
+      id: 'fantasia',
+      value: 'Fantasia',
+      livros: []
+    },
+    favorito: false,
+    imagem: 'https://m.media-amazon.com/images/I/81t2CVWEsUL.jpg'
+  },
+  {
+    titulo: 'Clean Code',
+    autoria: 'Robert C. Martin',
+    genero: {
+      id: 'tecnicos',
+      value: 'tecnicos',
+      livros: []
+    },
+    favorito: false,
+    imagem: 'https://m.media-amazon.com/images/I/51E2055ZGUL.jpg'
+  },
+  {
+    titulo: 'Estruturas de Dados e Algoritmos em Java',
+    autoria: 'Michael T. Goodrich',
+    genero: {
+      id: 'tecnicos',
+      value: 'tecnicos',
+      livros: []
+    },
+    favorito: false,
+    imagem: 'https://m.media-amazon.com/images/I/51bRhyVTVGL.jpg'
   }
 ];
