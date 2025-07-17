@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, input, OnInit, output, SimpleChanges } from '@angular/core';
+import { Component, input, OnInit, output, Signal, SimpleChanges } from '@angular/core';
 import { FormGroup, FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 
@@ -31,6 +31,7 @@ import { LivroService } from '../../services/livro.service';
 export class FormularioComponent implements OnInit {
   livroFormulario!: FormGroup;
   generos: GeneroLiterario[] = [];
+  submitForm = output<Livro>();
 
   constructor(
     private formBuilder: FormBuilder,
@@ -52,4 +53,12 @@ export class FormularioComponent implements OnInit {
       imagem: ['']
     })
   };
+  
+  emitirLivroAtualizado(){
+    const livroAtualizado: Livro = {
+      ...this.livroFormulario.value,
+      genero: this.generos.find(g => g.id === this.livroFormulario.value.genero)
+    }
+    this.submitForm.emit(livroAtualizado) 
+  }
 }

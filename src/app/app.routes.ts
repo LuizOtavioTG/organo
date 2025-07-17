@@ -1,12 +1,12 @@
 import { Routes } from '@angular/router';
 
 import { ListaLivrosComponent } from './paginas/lista-livros/lista-livros.component';
-import { FormularioComponent } from './componentes/formulario/formulario.component';
+import { CriaLivroComponent } from './paginas/cria-livro/cria-livro.component';
 
 export const routes: Routes = [
   {
-    path: 'formulario',
-    component: FormularioComponent
+    path: 'criar-livro',
+    component: CriaLivroComponent
   },
   {
     path: 'lista-livros',
@@ -16,4 +16,5 @@ export const routes: Routes = [
     path: '**',
     component: ListaLivrosComponent
   }
+
 ];

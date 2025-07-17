@@ -3,7 +3,7 @@
   <app-divisor tamanho="linha-destaque--grande" />
 </section>
 <section class="formulario">
-  <form [formGroup]="livroFormulario">
+  <form [formGroup]="livroFormulario" (ngSubmit)="emitirLivroAtualizado()">
     <app-subtitulo texto="Preencha os dados para criar o card do livro" />
     <div>
       <app-campo-texto label="Título" id="titulo" placeholder="Digite o título do livro" formControlName="titulo" />
