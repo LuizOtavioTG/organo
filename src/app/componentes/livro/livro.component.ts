@@ -27,7 +27,7 @@ export class LivroComponent {
       this.livro().favorito = livroAtualizado.favorito
     })
   }
-  exlcuir(){
+  excluir(){
     this.excluirLivro.emit(this.livro().id)
   }
 }
