@@ -40,4 +40,7 @@ export class ListaLivrosComponent implements OnInit {
       }));
     });
   }
+  removerLivro(id: string){
+    this.livroService.excluirLivro(id).subscribe();
+  }
 }
