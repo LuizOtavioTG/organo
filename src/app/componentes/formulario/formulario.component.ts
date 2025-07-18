@@ -29,8 +29,10 @@ import { LivroService } from '../../services/livro.service';
   styleUrl: './formulario.component.css'
 })
 export class FormularioComponent implements OnInit {
+
   livroFormulario!: FormGroup;
   generos: GeneroLiterario[] = [];
+  livro = input<Livro | null>(null);
   submitForm = output<Livro>();
 
   constructor(
