@@ -44,5 +44,8 @@ export class LivroService {
   adicionarLivro(novoLivro: Livro): Observable<Livro>{
     return this.httpClient.post<Livro>(this.API_URL, novoLivro )
   }
+  atualizarFavorito(livro: Livro): Observable<Livro>{
+    return this.httpClient.patch<Livro>(`${this.API_URL}/${livro.id}`, {favorito : livro.favorito})
+  }
 }
 
