@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormularioComponent } from '../../componentes/formulario/formulario.component';
 import { Livro } from '../../componentes/livro/livro';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { LivroService } from '../../services/livro.service';
 
 @Component({
@@ -15,19 +15,23 @@ export class EditarLivroComponent implements OnInit {
 
   constructor(
     private livroService: LivroService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private router: Router,
   ) { }
 
   ngOnInit(): void {
-
-    // //Chamada direta com snapshot
-    // const id = this.activatedRoute.snapshot.paramMap.get("id");
-    // if (id) {
-    //   this.livroService.obterLivroPorId(id).subscribe((livro) => {
-    //     this.livro = livro;
-    //   });
-    // }
-
-    
+    this.activatedRoute.paramMap.subscribe(params => {
+      const id = params.get('id');
+      if (id) {
+        this.livroService.obterLivroPorId(id).subscribe((livro) => {
+          this.livro = livro;
+        });
+      }
+    });
+  }
+  editarLivro(livro: Livro) {
+    this.livroService.editarLivro(livro).subscribe(()=> {
+        this.router.navigate(['lista-livros'])
+    })
   }
 }
