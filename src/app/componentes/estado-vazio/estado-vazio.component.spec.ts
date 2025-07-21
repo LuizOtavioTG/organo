@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GeneroLiterarioComponent } from './genero-literario.component';
+import { EstadoVazioComponent } from './estado-vazio.component';
 
-describe('GeneroLiterarioComponent', () => {
-  let component: GeneroLiterarioComponent;
-  let fixture: ComponentFixture<GeneroLiterarioComponent>;
+describe('EstadoVazioComponent', () => {
+  let component: EstadoVazioComponent;
+  let fixture: ComponentFixture<EstadoVazioComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GeneroLiterarioComponent]
+      imports: [EstadoVazioComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GeneroLiterarioComponent);
+    fixture = TestBed.createComponent(EstadoVazioComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

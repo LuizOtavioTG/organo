@@ -1,13 +1,13 @@
 export interface Livro {
-    titulo: string;
-    autoria: string;
-    favorito: boolean;
-    genero: GeneroLiterario;
-    imagem: string
+  id: string;
+  titulo: string;
+  autoria: string;
+  imagem: string;
+  favorito: boolean;
+  genero: GeneroLiterario;
 }
 
 export interface GeneroLiterario {
-    id: string;
-    value: string;
-    livros: Livro[]
+  id: string;
+  value: string;
 }
